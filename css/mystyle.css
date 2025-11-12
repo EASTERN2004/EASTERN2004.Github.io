@@ -100,3 +100,34 @@ h3,h1,h2{
      */
     color: #41694f;
 }
+/* ===================================== */
+/* 最終嘗試：強制移除技能圖示的所有底線 */
+/* ===================================== */
+
+/* 1. 確保列表項目 (li) 本身在所有狀態下都沒有底線 */
+.dev-icons .list-inline-item, 
+.dev-icons .list-inline-item:hover,
+.dev-icons .list-inline-item:focus {
+    text-decoration: none !important;
+}
+
+/* 2. 確保列表項目中的圖示 (i 標籤) 在所有狀態下都沒有底線 */
+.dev-icons .list-inline-item i,
+.dev-icons .list-inline-item i:hover,
+.dev-icons .list-inline-item i:focus {
+    text-decoration: none !important;
+}
+
+/* 3. 確保列表項目中的所有元素都移除底線 */
+.dev-icons .list-inline-item *,
+.dev-icons .list-inline-item *:hover,
+.dev-icons .list-inline-item *:focus {
+    text-decoration: none !important;
+}
+
+/* 4. 再次檢查是否為邊框或陰影造成 (雙重保險) */
+.dev-icons .list-inline-item,
+.dev-icons .list-inline-item i {
+    border: none !important;
+    box-shadow: none !important;
+}
