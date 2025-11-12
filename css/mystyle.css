@@ -100,3 +100,5 @@ h3,h1,h2{
      */
     color: #41694f;
 }
+
+@import url(fontawesome-all.min.css);
